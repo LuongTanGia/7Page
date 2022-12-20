@@ -10,3 +10,8 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins";
 }
+/* HEADER */
+header {
+    background: #e6f0ff;
+    height: 100vh;
+}
