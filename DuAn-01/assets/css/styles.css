@@ -39,6 +39,7 @@ a {
 }
 /* HEADER */
 header {
+    position: relative;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -71,4 +72,40 @@ header {
 .navbar .action-btn {
     padding: 13px 16px;
     margin-left: 18px;
+}
+.hero {
+    margin-top: 130px;
+}
+.hero .info {
+    width: 51%;
+}
+.hero .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+.hero .title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.19;
+    color: #000336;
+}
+.hero .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #5a6473;
+}
+.hero-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+.hero-img {
+    position: absolute;
+    right: 65px;
+    bottom: 0;
 }
