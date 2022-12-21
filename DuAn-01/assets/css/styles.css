@@ -106,6 +106,31 @@ header {
 }
 .hero-img {
     position: absolute;
-    right: 65px;
+    right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
+}
+/* Client */
+.clients {
+    margin-top: 122px;
+}
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+.clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    /* identical to box height, or 125% */
+    text-align: right;
+    color: #7d8589;
+}
+.clients .row-desc {
+    margin-top: 23px;
+}
+.clients .images {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
