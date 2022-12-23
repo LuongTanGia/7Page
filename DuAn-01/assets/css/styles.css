@@ -304,8 +304,137 @@ a {
 .featured .item .icon:first-child {
     margin-left: 0;
 }
-.center {
+/* STATS */
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+.stats .content {
+    width: 1048px;
+}
+.stats .row {
+    display: flex;
+}
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+.stats .img-block {
+    position: relative;
+}
+.stats .img-block .image {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+.stats-trend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 239px;
+    padding: 45px 22px 40px;
+    border-radius: 0px 0px 12px 12px;
+    background: #ffffff;
+    box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+}
+.stats-trend .value {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+.stats-trend .icon {
+    margin-left: auto;
+}
+.stats-trend .desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    /* or 150% */
+    color: #a7a7a7;
+}
+.stats-trend .separate {
+    height: 1.2px;
+    margin-top: 25px;
+    background: #e9e9e9;
+}
+.stats .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 26px;
+}
+.stats .avatar-group {
+    display: flex;
+}
+.stats .avatar {
+    width: 16px;
+    height: 16px;
+    margin-left: -3px;
+    object-fit: cover;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--bg-color, #fff);
+    font-weight: 450;
+    font-size: 0.7rem;
+    line-height: 16px;
+}
+.stats .avatar:first-child {
+    margin-left: 0;
+}
+.stats .sub-title {
+    position: relative;
+    width: 269px;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    /* or 129% */
+    color: #000339;
+}
+.stats .sub-title::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+.stats .info .desc {
+    margin-top: 20px;
+    width: 309px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    /* or 188% */
+    color: #5a6473;
+}
+.stats .row-qty {
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+.stats .qty {
+    font-weight: 600;
+    font-size: 6.4rem;
+    color: #000000;
+}
+.stats .qty-desc {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #7b8087;
 }
