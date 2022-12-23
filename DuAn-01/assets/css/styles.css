@@ -7,7 +7,6 @@
 
 html {
     font-size: 62.5%;
-    height: 5000px;
 }
 
 body {
@@ -482,4 +481,69 @@ a {
     position: absolute;
     bottom: 0;
     right: 221px;
+}
+/* FOOTER */
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 58px;
+}
+.footer .row {
+    display: flex;
+}
+.footer .row-top {
+    gap: 185px;
+}
+.footer .heading {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1c1c1d;
+}
+.footer .list,
+.footer .desc {
+    margin-top: 42px;
+}
+.footer .item {
+    margin-top: 18px;
+}
+.footer .item a,
+.footer .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    /* identical to box height */
+    color: #7a7a7e;
+    white-space: nowrap;
+}
+.footer .desc {
+    white-space: normal;
+}
+.footer .social {
+    margin-top: 40px;
+    display: flex;
+}
+.footer .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+}
+.footer .social-link:hover {
+    background-color: #ececec;
+    border-radius: 3px;
+}
+.footer .row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+}
+.footer .copyright {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    /* identical to box height */
+    color: #c2c2c2;
 }
