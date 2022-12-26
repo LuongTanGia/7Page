@@ -14,20 +14,23 @@
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
     <body>
-        <main>
+        <main id="home">
             <!-- Header -->
-            <header class="header">
+            <header class="fixed-header">
                 <div class="content">
                     <nav class="navbar">
                         <!-- Logo -->
-                        <img src="./assets/img/Logo.svg" alt="Besnik.">
+                        <a href="#home">
+                            <img src="./assets/img/Logo.svg" alt="Besnik.">
+                        </a>
                         <!-- Navigation -->
                         <ul>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Features</a></li>
-                            <li><a href="#!">Services</a></li>
-                            <li><a href="#!">Resources</a></li>
-                            <li><a href="#!">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#clients">Services</a></li>
+                            <li><a href="#guides">Guides</a></li>
+                            <li><a href="#featured">Features</a></li>
+                            <li><a href="#stats">Stats</a></li>
+                            <li><a href="#subscription">Subscription</a></li>
                         </ul>
                         <!-- Action -->
                         <div class="actions">
@@ -35,28 +38,31 @@
                             <a href="#!" class="btn action-btn">Sign up</a>
                         </div>
                     </nav>
-                    <div class="hero">
-                        <div class="info">
-                            <a href="#!">
-                                <p class="sub-title">Welcome to Besnik Agency</p>
-                            </a>
-                            <h1 class="title">Discover a place
-                                you'll love to live.</h1>
-                            <p class="desc">Get the best real estate deals
-                                first,
-                                before they hit the mass market! HOT FORECLOSURE
-                                DEALS with one simple search.</p>
-                            <!-- Call to action -->
-                            <a href="#!" class="btn hero-cta">More About Us</a>
-                        </div>
-                        <img src="./assets/img/house illustration.svg"
-                            alt="Discover a place
-                            you'll love to live." class="hero-img">
-                    </div>
                 </div>
             </header>
+            <!-- Hero -->
+            <div class="hero-wrap">
+                <div class="content">
+                    <div class="info">
+                        <a href="#!">
+                            <p class="sub-title">Welcome to Besnik Agency</p>
+                        </a>
+                        <h1 class="title">Discover a place
+                            you'll love to live.</h1>
+                        <p class="desc">Get the best real estate deals
+                            first,
+                            before they hit the mass market! HOT FORECLOSURE
+                            DEALS with one simple search.</p>
+                        <!-- Call to action -->
+                        <a href="#!" class="btn hero-cta">More About Us</a>
+                    </div>
+                    <img src="./assets/img/house illustration.svg"
+                        alt="Discover a place
+                        you'll love to live." class="hero-img">
+                </div>
+            </div>
             <!-- Client -->
-            <div class="clients">
+            <div class="clients" id="clients">
                 <div class="content">
                     <div class="row">
                         <!-- logo -->
@@ -104,7 +110,7 @@
                 </div>
             </div>
             <!-- Guides -->
-            <div class="guides">
+            <div class="guides" id="guides">
                 <div class="content">
                     <h2 class="sub-title">How its works?</h2>
                     <p class="desc">
@@ -153,7 +159,7 @@
                 </div>
             </div>
             <!-- Featured -->
-            <div class="featured">
+            <div class="featured" id="featured">
                 <div class="content">
                     <header>
                         <h2 class="sub-title">Featured Properties</h2>
@@ -251,7 +257,7 @@
                 </div>
             </div>
             <!-- Stats -->
-            <div class="stats">
+            <div class="stats" id="stats">
                 <div class="content">
                     <div class="row">
                         <div class="img-block">
@@ -389,7 +395,7 @@
                 </div>
             </div>
             <!-- Subscription -->
-            <div class="subscription">
+            <div class="subscription" id="subscription">
                 <div class="content">
                     <div class="body">
                         <div class="info">
