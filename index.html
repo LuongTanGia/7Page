@@ -1,16 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/gia.jpg" type="image/x-icon"
+            styles="border:50%;">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Cv Của Gia</title>
     </head>
+
     <body>
-        <main>
-            <div class="DOAN">
-                <a href="./DuAn-01/index.html">Dự Án 01</a>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="img/gia.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Tấn Gia</h2>
+                    <h3 class="profile__profession">Web developer</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank"
+                            class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100010381846255"
+                            target="_blank"
+                            class="profile__social-link">
+                            <i class="ri-facebook-box-line"></i>
+                        </a>
+
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+10</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">Satisfied <br>
+                            customers</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="pdf/Mycv.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a
+                            href="https://api.whatsapp.com/send?phone=0333394703&text=Hello,
+                            more information!" target="_blank" class="button
+                            button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="https://www.messenger.com/" target="_blank"
+                            class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active"
+                        data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                    <button class="filters__button" data-target="#infor">
+                        Information
+                    </button>
+                    <button class="filters__button" data-target="#layout">
+                        Layout
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active"
+                        data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="img/pj_1.png" alt=""
+                                class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Quản Lý Của Hàng
+                                        Giày</h3>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=-L-v-Xvm0EA"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-youtube-line"></i>
+                                    </a>
+                                    <a
+                                        href="https://github.com/LuongTanGia/QuanLyCH"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="img/pj_2.png" alt=""
+                                class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Quản Lý Của Hàng
+                                        Dịch Vụ Giày</h3>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=4GEaVhbdmqI"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-youtube-line"></i>
+                                    </a>
+                                    <a
+                                        href="https://github.com/LuongTanGia/CLEANSHOP_Web"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="img/pj_3.png" alt=""
+                                class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Web Tour Du Lịch</h3>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=mWgJ2nqspto"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-youtube-line"></i>
+                                    </a>
+                                    <a
+                                        href="https://github.com/LuongTanGia/DACN2"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="img/asp.jpg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Quản Lý Của Hàng
+                                        Nước Ngọt</h3>
+                                    <a
+                                        href="#"
+                                        class="projects__button
+                                        button button__small">
+                                        <i class="ri-youtube-line"></i>
+                                    </a>
+                                    <a
+                                        href="https://github.com/LuongTanGia/WebBanNuoc"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend Developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">ASP.Net</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============== Infor================================================ -->
+                    <div class=" grid" data-content id="infor">
+                        <div>
+                            <h3 class="skills__title">Contact</h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-calendar-event-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">08/04/2001</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-account-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Male</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-phone-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">0333394703</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-mail-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">luong1tan1gia123@gmail.com</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-home-4-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">442/3 Lê
+                                                Quang Định ,p11 ,Bình Thạnh ,
+                                                HCM</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--=============== Layout ===============-->
+                    <div class="projects__content grid filters__active"
+                        data-content id="layout">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="img/LO_1.png" alt=""
+                                class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Layout</span>
+                                    <h3 class="projects__title">Besnik Agency</h3>
+                                    <a
+                                        href="./DuAn-01/index.html"
+                                        target="_blank" class="projects__button
+                                        button button__small">
+                                        <i class="ri-eye-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </section>
         </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; web developer Tấn Gia !!!
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/main.js"></script>
     </body>
+
 </html>
